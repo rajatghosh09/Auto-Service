@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Service</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="top-navbar">
+            <div class="content-left">
+                <div class="content-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Address: <span>autoservice@gmail.com</span></span>
+                </div>
+                <div class="content-item">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Contact Number: <span>+91-1234567890</span></span>
+                </div>
+            </div>
+            <div class="content-right">
+                <i class="fas fa-location-dot"></i>
+                <span>Location:
+                    <span>
+                        <label for="country"></label>
+                        <select id="country" class="navlabel">
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Haldia">Haldia</option>
+                            <option value="Durgapur">Durgapur</option>
+                        </select>
+                    </span>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="nav">
+            <div class="navcontainer">
+                <nav class="navbox">
+                    <div class="brand">
+                        <a href="index.html">
+                            <img src="images/Main logo.png" alt="logo" />
+                        </a>
+                    </div>
+
+                    <ul class="navlinks">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Spares</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="navline">
+                    </div>
+
+                    <div class="cart">
+                        <i class="bi bi-cart-dash"></i>
+                    </div>
+
+                    <div class="nav-btn">
+                        <a href="#" class="cmn-btn">LOG IN</a>
+
+                        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <section class="banner">
+            <div class="slider">
+                <div class="slides-wrapper">
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row banner-row">
+                                <div class="col50">
+                                    <div class="left-banner-content">
+                                        <span>PERFORMANCE</span>
+                                        <h1>We Will Help You Find The Best Solution!</h1>
+                                        <div class="bannner-description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever
+                                        </div>
+                                        <div class="banner-btn">
+                                            <a href="#" class="cmn-btn">Read more
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row banner-row">
+                                <div class="col50 banner-row">
+                                    <div class="left-banner-content">
+                                        <span>PERFECTION</span>
+                                        <h1>Give Your Car A True Custom Look!</h1>
+                                        <div class="bannner-description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever
+                                        </div>
+                                        <div class="banner-btn">
+                                            <a href="#" class="cmn-btn">Read more
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row banner-row">
+                                <div class="col50">
+                                    <div class="left-banner-content">
+                                        <span>QUALITY</span>
+                                        <h1>Because So Much Is Riding Your Tires!</h1>
+                                        <div class="bannner-description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever
+                                        </div>
+                                        <div class="banner-btn">
+                                            <a href="#" class="cmn-btn">Read more
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col50 none">
+                    <div class="right-banner-content">
+                        <div class="h4-title">Experience The Best Services</div>
+
+                        <div class="redline">
+                            <div class="sm-line"></div>
+                            <div class="lg-line"></div>
+                            <div class="sm-line"></div>
+                        </div>
+
+                        <div class="wheeler">
+                            <span>2 Wheeler</span>
+                            <span>4 Wheeler</span>
+                        </div>
+
+                        <div class="form-container">
+                            <select>
+                                <option>Select Manufacture</option>
+                            </select>
+                            <select>
+                                <option>Select Model</option>
+                            </select>
+
+                            <div class="form-row">
+                                <select>
+                                    <option>Year Range</option>
+                                </select>
+                                <select>
+                                    <option>Category</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <select>
+                                    <option>Variant</option>
+                                </select>
+                                <select>
+                                    <option>Fuel Type</option>
+                                </select>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- expert service -->
+        <section class="service">
+            <div class="container">
+                <div class="service-details">
+                    <h1>We Provide <span class="highlight"><span>Expert Service</span></span></h1>
+                    <p>We aim to earn your trust and have a long term relationship with you</p>
+                </div>
+                <div class="row service-row">
+                    <div class="col33">
+                        <div class="service-card">
+                            <div class="red-circle">
+                                <figure><img src="images/Maintenance.png" alt="Maintenance"></figure>
+                            </div>
+                            <span>Maintenance</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+
+
+                            <a class="cmn-btn readBtn">
+                                <div class="readbtnText">Read more</div>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                            </a>
+                            <div class="readText">
+                                <div class="redline"></div>
+                                <div class="text">
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="service-card">
+                            <div class="red-circle">
+                                <figure><img src="images/Tiers.png" alt="Tiers"></figure>
+                            </div>
+                            <span>Wheels & Tires</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+
+                            <a class="cmn-btn readBtn">
+                                <div class="readbtnText">Read more</div>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                            </a>
+                            <div class="readText">
+                                <div class="redline"></div>
+                                <div class="text">
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="service-card">
+                            <div class="red-circle">
+                                <figure><img src="images/Fuel.png" alt="Fuel"></figure>
+                            </div>
+                            <span>Fuel Change</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+
+                            <a class="cmn-btn readBtn">
+                                <div class="readbtnText">Read more</div>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                            </a>
+                            <div class="readText">
+                                <div class="redline"></div>
+                                <div class="text">
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- repair and service -->
+        <section class="repair-service">
+            <div class="containerfluid">
+                <div class="row">
+                    <div class="image-section">
+                        <figure>
+                            <img src="images/Repairboy.png" alt="repair" loading="lazy" />
+                        </figure>
+                    </div>
+                    <div class="services-section">
+                        <span>Below are some of the many auto repair services we offer:</span>
+                        <div class="services-columns">
+                            <ul>
+                                <li><i class="fa-solid fa-wrench"></i> FREE 4 Wheeler Service</li>
+                                <li><i class="fa-solid fa-wrench"></i> FREE 2 Wheeler Service</li>
+                                <li><i class="fa-solid fa-wrench"></i> Exhaust System Repair</li>
+                                <li><i class="fa-solid fa-wrench"></i> Wheel Alignment</li>
+                                <li><i class="fa-solid fa-wrench"></i> Fuel System Repair</li>
+                                <li><i class="fa-solid fa-wrench"></i> Electrical Diagnosis</li>
+                                <li><i class="fa-solid fa-wrench"></i> Brake Service</li>
+                                <li><i class="fa-solid fa-wrench"></i> Emission Repair</li>
+                                <li><i class="fa-solid fa-wrench"></i> Oil Change</li>
+                                <li><i class="fa-solid fa-wrench"></i> AC Repair</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa-solid fa-wrench"></i> Manufacturer Recommended Service</li>
+                                <li><i class="fa-solid fa-wrench"></i> Tire Repair and Replacement</li>
+                                <li><i class="fa-solid fa-wrench"></i> Transmission Repair & Replacement</li>
+                                <li><i class="fa-solid fa-wrench"></i> General Auto Repair & Maintenance</li>
+                                <li><i class="fa-solid fa-wrench"></i> Engine Cooling System Maintenance</li>
+                                <li><i class="fa-solid fa-wrench"></i> Starting & Charging Repair</li>
+                                <li><i class="fa-solid fa-wrench"></i> Steering and Suspension Work</li>
+                                <li><i class="fa-solid fa-wrench"></i> Vehicle Preventative Maintenance</li>
+                                <li><i class="fa-solid fa-wrench"></i> State Emissions Inspection</li>
+                                <li><i class="fa-solid fa-wrench"></i> Engine Cooling System Flush</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us -->
+        <section class="choose-us">
+            <div class="container">
+                <div class="choose-us-details">
+                    <h1>Why <span class="highlight"><span>Choose</span></span>Us</h1>
+                </div>
+                <div class="row choose-us-row">
+                    <div class="choose-us-content">
+                        <div class="col100">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It was popularised in the 1960s
+                                with
+                                the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                desktop
+                                publishing software like Aldus PageMaker including versions of Lorem.
+                            </p>
+                            <p>
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset
+                                sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                software
+                                like
+                                Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a
+                                reader
+                                will be distracted by the readable content of a page when looking at its layout. The
+                                point
+                                of
+                                using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                                opposed
+                                to
+                                using 'Content here, content here', making it look like readable English.
+                            </p>
+                        </div>
+
+                        
+                        <a href="#" class="cmn-btn">Read more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+
+                    <div class="col100">
+                        <div class="choose-us-image">
+                            <figure>
+                                <img src="images/chooseus.png" alt="chooseus" />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col25">
+                        <div class="choose-us-card">
+                            <div class="logo">
+                                <figure>
+                                    <img src="images/Technician.png" alt="Technician" />
+                                </figure>
+                            </div>
+                            <span>1000+ Technicians</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="choose-us-card">
+                            <div class="logo">
+                                <figure>
+                                    <img src="images/Support.png" alt="Support" />
+                                </figure>
+                            </div>
+                            <span>Quality Support</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="choose-us-card">
+                            <div class="logo">
+                                <figure>
+                                    <img src="images/Location.png" alt="Location" />
+                                </figure>
+                            </div>
+                            <span>520 Locations</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="choose-us-card">
+                            <div class="logo">
+                                <figure>
+                                    <img src="images/Experience.png" alt="Experience" />
+                                </figure>
+                            </div>
+                            <span>10 Years Experience </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- How we work -->
+        <section class="we-work">
+            <div class="container">
+                <div class="we-work-details">
+                    <h1>How <span class="highlight"><span>We Work</span></span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis,</p>
+                </div>
+
+
+                <div class="row we-work-row">
+                    <div class="col25">
+                        <div class="work-up">
+                            <div class="work-logo">
+                                <figure>
+                                    <img src="images/up arrow.png" class="up-arrow" alt="arrow" />
+                                    <img src="images/Perfect Service.png" alt="perfect-service" />
+                                </figure>
+                            </div>
+
+                            <span>Select The Perfect Service</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper.</p>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="work-down">
+                            <div class="work-logo">
+                                <figure>
+                                    <img src="images/Door step pick up.png" alt="Pick-up" />
+                                </figure>
+                            </div>
+
+                            <span>Schedule Free Doorstep Pick-up</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper.</p>
+                            <img src="images/Down arrow.png" class="down-arrow" alt="arrow" />
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="work-up">
+                            <div class="work-logo">
+                                <figure>
+                                    <img src="images/up arrow.png" class="up-arrow" alt="arrow" />
+                                    <img src="images/repiar.png" alt="repair" />
+                                </figure>
+                            </div>
+
+                            <span>Repair Your Vehicale</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper.</p>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="work-down">
+                            <div class="work-logo">
+                                <figure>
+                                    <img src="images/service.png" alt="service" />
+                                </figure>
+                            </div>
+
+                            <span>Enjoy Our Service</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Shop our product -->
+        <section class="our-product">
+            <div class="container">
+                <div class="our-product-details">
+                    <h1>Shop <span class="highlight"><span>Our Products</span></span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis,</p>
+                </div>
+
+                <div class="our-product-section">
+                    <div class="product-container productSwiper">
+
+                        <button class="product-button" onclick="productButtonSlider(-1)"><i
+                                class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="product-slider" id="productSlider">
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.5 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">ABC Expansion Valve, VOL ASSY, EXPANSION 1234567890</span>
+                                    <span class="brand-id">Brand Name: ABC</span>
+                                    <span class="brand-id">Part ID: 1234567890</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        45.00</span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 32.00</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">10% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.2 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item1.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">KM Nature Expansion Valve, VOL ASSY, EXPANSION
+                                        6532498711</span>
+                                    <span class="brand-id">Brand Name: KM Nature</span>
+                                    <span class="brand-id">Part ID: 6532498711</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        63.00</span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 26.50</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">20% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.4 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item2.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">Ostin Expansion Valve, VOL ASSY, EXPANSION 22556789</span>
+                                    <span class="brand-id">Brand Name: ABC</span>
+                                    <span class="brand-id">Part ID: 1234567890</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        72.12</span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 45.80</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">15% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.2 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item3.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">KM Nature Expansion Valve, VOL ASSY, EXPANSION
+                                        6532498711</span>
+                                    <span class="brand-id">Brand Name: KM Nature</span>
+                                    <span class="brand-id">Part ID: 6532498711</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        63.00
+                                    </span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 26.50</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">20% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.1 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item4.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">Jiga Expansion Valve, VOL ASSY, EXPANSION 6532498711</span>
+                                    <span class="brand-id">Brand Name: Jiga</span>
+                                    <span class="brand-id">Part ID: 568942336</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        89.00</span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 64.50</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">20% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-items">
+                                <div class="product-items-content">
+                                    <div class="icon-rating-offer-add">
+                                        <figure>
+                                            <img src="images/productlogo.png" alt="logo" />
+                                        </figure>
+                                        <div class="rating">
+                                            4.0 <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <figure>
+                                        <img src="images/product item5.png" alt="item" />
+                                    </figure>
+                                    <span class="heading">GEZZ Expansion Valve, VOL ASSY, EXPANSION 7423589100</span>
+                                    <span class="brand-id">Brand Name: GEZZ</span>
+                                    <span class="brand-id">Part ID: 7423589700</span>
+                                    <span class="rupee-line"><i class="fa-solid fa-indian-rupee-sign product-line"></i>
+                                        22.47</span>
+                                    <span class="rupee"><i class="fa-solid fa-indian-rupee-sign"></i> 18.04</span>
+                                    <div class="icon-rating-offer-add">
+                                        <span class="offer">5% Off</span>
+                                        <div class="add">
+                                            <i class="fa-solid fa-cart-shopping"></i> ADD
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="product-button" onclick="productButtonSlider(1)"><i
+                                class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#" class="cmn-btn">View more
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- service package -->
+        <section class="service-package">
+            <div class="container">
+                <div class="service-package-details">
+                    <h1>Our <span class="highlight"><span> Service Package</span></span></h1>
+                </div>
+                <div class="row service-package-row">
+
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">BASIC PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    1500.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">2 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Prewash</p>
+                                <p>AC Checkup</p>
+                                <p>Manual Cleaning</p>
+                                <p>Interiors Vacuum</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">DELUXE PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    1800.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">5 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Include the Basic Package</p>
+                                <p>Wheel Shine</p>
+                                <p>Tire Dressing</p>
+                                <p>Windows In & Out</p>
+                                <p>Brakes</p>
+                                <p>Steering</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">PLATINUM PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    2400.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">8 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Include the Basic Package</p>
+                                <p>Include the Deluxe Package</p>
+                                <p>Glass Polishing</p>
+                                <p>AC Vent Cleaning</p>
+                                <p>Car Exteriors</p>
+                                <p>Wheel Alignment</p>
+                                <p>Car Mats</p>
+                                <p>Dashboard Cleaning</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer reviews -->
+        <section class="customer-reviews">
+            <div class="containerfluid">
+                <div class="row customer-reviews-row">
+                    <div class="customer-reviews-img">
+                        <figure>
+                            <img src="images/customer.png" alt="customer" loading="lazy" />
+                        </figure>
+                    </div>
+
+                    <div class="col45">
+                        <div class="customer-review-section">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="customer-review-details">
+                                            <h3><span class="customer-highlight">Customer</span> Reviews</h3>
+                                            <div class="customer-rating">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-half"></i>
+                                            </div>
+                                            <p class="review-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                            <div class="review-person-details">
+                                                <figure>
+                                                    <img class="media-logo" src="images/facebook.png" alt="Facebook" />
+                                                </figure>
+                                                <div class="reviewer-name">
+                                                    <span class="name">Nishtha Bhairi</span>
+                                                    <span class="media-name">Facebook</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="customer-review-details">
+                                            <h3><span class="customer-highlight">Customer</span> Reviews</h3>
+                                            <div class="customer-rating">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i>
+                                            </div>
+                                            <p class="review-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                            <div class="review-person-details">
+                                                <figure>
+                                                    <img class="media-logo" src="images/twitter.png" alt="Facebook" />
+                                                </figure>
+                                                <div class="reviewer-name">
+                                                    <span class="name">Alok Andher</span>
+                                                    <span class="media-name">Twitter</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="customer-review-details">
+                                            <h3><span class="customer-highlight">Customer</span> Reviews</h3>
+                                            <div class="customer-rating">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill">
+                                                </i>
+                                            </div>
+                                            <p class="review-text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                            <div class="review-person-details">
+                                                <figure>
+                                                    <img class="media-logo" src="images/facebook.png" alt="Facebook" />
+                                                </figure>
+                                                <div class="reviewer-name">
+                                                    <span class="name">A.K.Kumar</span>
+                                                    <span class="media-name">Facebook</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- download app -->
+        <section class="download-app-section">
+            <div class="container">
+                <div class="row download-app-row">
+                    <div class="col50">
+                        <div class="phone-img">
+                            <figure>
+                                <img src="images/Phone.png" alt="phone" loading="lazy" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col50">
+                        <div class="app-details">
+                            <h3 class="app-heading">Download <span class="customer-highlight">Auto Service</span> App
+                            </h3>
+                            <p class="app-subheading">
+                                Choose & book our seamless auto service experience and on your first service booking get
+                                upto 500 off with <span class="customer-highlight">Auto Service</span> App
+                            </p>
+
+                            <div class="app-store">
+                                <a class="store-details" href="https://play.google.com/store/games?hl=en_IN">
+                                    <figure>
+                                        <img src="images/platstore.png" alt="platstore" />
+                                    </figure>
+                                    <div class="store-heading">
+                                        <span class="get">GET IT ON</span>
+                                        <span class="store-name">Google Play</span>
+                                    </div>
+                                </a>
+                                <a class="store-details" href="https://apps.apple.com/bj/developer/apple/id284417353">
+                                    <figure>
+                                        <img src="images/applestore.png" alt="applestore" />
+                                    </figure>
+                                    <div class="store-heading">
+                                        <span class="get">Download on the</span>
+                                        <span class="store-name">App Store</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="get-app-link">
+                                <div class="app-link-details">
+                                    <figure>
+                                        <img src="images/indiaflag.png" alt="flag" />
+                                    </figure>
+                                    <div class="line"></div>
+                                    <input type="text" class="input-field" placeholder="Enter your mobile number">
+                                    <div class="getlink-btn">
+                                        <span>GET APP LINK</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- we repair section -->
+        <section class="we-repair">
+            <div class="we-repair-container">
+                <div class="we-repair-details">
+                    <h1>We Repair All Makes of
+                        <span class="highlight"><span>Automobiles</span></span>
+                    </h1>
+                </div>
+                <div class="we-repair-subheading">We work with all makes and models of vehicles</div>
+
+                <div class="logos">
+                    <div class="swiper logoSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos-content">
+                                    <figure>
+                                        <img src="images/citroen.png" alt="logo" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Daewoo.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Audi.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/bmw.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chevrolet.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chrysler.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logos-content">
+                                    <figure>
+                                        <img src="images/citroen.png" alt="logo" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Daewoo.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Audi.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/bmw.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chevrolet.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chrysler.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-details">
+                    <span class="contact">CONTACT US</span>
+                    <span class="footer-subheading">Do you have a question?</span>
+                    <span class="footer-subheading">Fell free to contact</span>
+                </div>
+
+                <div class="brand-information">
+                    <div class="row footer-row">
+                        <div class="col25">
+                            <div class="brand-details address">
+                                <div class="icons">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Address:</span>
+                                    <span class="brand-subheading">123, AGC by Lane Modhupur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details email">
+                                <div class="icons">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Email Address:</span>
+                                    <span class="brand-subheading">autoservice@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details brand-contact">
+                                <div class="icons">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Contact No:</span>
+                                    <span class="brand-subheading">+91-1234567890</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details">
+                                <div class="icons">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Follow Us</span>
+                                    <span class="Follow-icons">
+                                        <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i> <i
+                                            class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- footer services -->
+                        <div class="col25">
+                            <div class="links">
+                                <span>Our Services</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">Repair</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Diagnostic</a></li>
+                                        <li><a href="#">Oil Change</a></li>
+                                        <li><a href="#">Brake Repair Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Company</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">About Company</a></li>
+                                        <li><a href="#">Spares</a></li>
+                                        <li><a href="#">Diagnostic</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Quick Links</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Customer Feedback</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Get Our Newsletter</span>
+                                <p>If you want to receive our all weekly updates about new offers and discount, signup
+                                    below.</p>
+                                <a class="footer-btn" href="#">Enter your email address
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- copy right -->
+        <div class="copy-right">
+            <span>Copyright © 2023 Auto Service. All rights reserved</span>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- script -->
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // product swiper
+        // function productButtonSlider(direction) {
+        //     const productSlider = document.getElementById('productSlider');
+        //     const scrollAmount = 1250;
+        //     productSlider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth', });
+        // }
+
+        function productButtonSlider(direction) {
+            const productSlider = document.getElementById('productSlider');
+
+            let scrollAmount;
+
+            if (window.innerWidth >= 1024) {
+                scrollAmount = 1250;
+            } else if (window.innerWidth >= 768) {
+                scrollAmount = 795;
+            } else if (window.innerWidth >= 375) {
+                scrollAmount = 350;
+            } else {
+                scrollAmount = 240;
+            }
+
+            productSlider.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // 👉 Drag-to-scroll
+        const slider = document.getElementById('productSlider');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+
+        // 👉 Touch support
+        slider.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('touchend', () => {
+            isDown = false;
+        });
+
+        slider.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            const x = e.touches[0].pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+
+
+        // customer swiper
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        //logos ja
+        var swiper = new Swiper(".logoSwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 6,
+            spaceBetween: 40,
+            loop: false, // helps in responsive issues
+            breakpoints: {
+                1490: {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 40
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                570: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            }
+        });
+
+
+        // read-btn
+        document.querySelectorAll('.readBtn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const arrow = btn.querySelector('.arrow');
+                const text = btn.querySelector('.readbtnText');
+                const readText = btn.nextElementSibling;
+
+
+                if (arrow.classList.contains('fa-angle-down')) {
+                    arrow.classList.remove('fa-angle-down');
+                    arrow.classList.add('fa-angle-up');
+                    readText.style.display = 'block';
+                    text.textContent = 'Read less';
+
+                } else {
+                    arrow.classList.remove('fa-angle-up');
+                    arrow.classList.add('fa-angle-down');
+                    readText.style.display = 'none';
+                    text.textContent = 'Read more';
+                }
+            });
+        });
+
+
+        // read btn
+        // const readBtn = document.querySelector('.readBtn');
+        // const arrow = readBtn.querySelector('.arrow');
+        // const readText = document.querySelector('.readText');
+        // const text = document.querySelector('.readbtnText');
+
+        // readBtn.addEventListener('click', function () {
+        //     if (arrow.classList.contains('fa-angle-down')) {
+        //         arrow.classList.remove('fa-angle-down');
+        //         arrow.classList.add('fa-angle-up');
+        //         readText.style.display = 'block';
+        //         text.textContent = 'Read less';
+
+        //     } else {
+        //         arrow.classList.remove('fa-angle-up');
+        //         arrow.classList.add('fa-angle-down');
+        //         readText.style.display = 'none';
+        //         text.textContent = 'Read more';
+        //     }
+        // })
+
+    </script>
+
+</body>
+
+</html>

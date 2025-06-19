@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- service css -->
+    <link rel="stylesheet" href="service.css" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Auto Service</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="top-navbar">
+            <div class="content-left">
+                <div class="content-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Address: <span>autoservice@gmail.com</span></span>
+                </div>
+                <div class="content-item">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Contact Number: <span>+91-1234567890</span></span>
+                </div>
+            </div>
+            <div class="content-right">
+                <i class="fas fa-location-dot"></i>
+                <span>Location:
+                    <span>
+                        <label for="country"></label>
+                        <select id="country" class="navlabel">
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Haldia">Haldia</option>
+                            <option value="Durgapur">Durgapur</option>
+                        </select>
+                    </span>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="nav">
+            <div class="navcontainer">
+                <nav class="navbox">
+                    <div class="brand">
+                        <a href="index.html">
+                            <img src="images/Main logo.png" alt="logo" />
+                        </a>
+                    </div>
+
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="service.html">Service</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Spares</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="navline">
+                    </div>
+
+                    <div class="cart">
+                        <i class="bi bi-cart-dash"></i>
+                    </div>
+
+                    <div class="nav-btn">
+                        <a href="#" class="cmn-btn">LOG IN</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- banner -->
+        <section class="service-banner">
+            <div class="navlocation-container">
+                <div class="nav-location">
+                    <a href="#">Home</a><span><i class="bi bi-chevron-right"></i></span><span>Service</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- our service -->
+        <section class="our-service">
+            <div class="container">
+                <div class="row">
+                    <div class="our-service-details">
+                        <h1>Our <span class="highlight"><span>Services</span></span></h1>
+                        <div class="col100">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. It was popularised in the
+                                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="our-service-container">
+                        <button class="product-button" onclick="serviceButtonSlider(-1)"><i
+                                class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="service-slider" id="serviceSlider">
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service1.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">EXTERIOR HAND WASH</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service2.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">INTERIOR DETAILING</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service3.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">MAINTENANCE</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service4.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">LIGHTS & ACCESSORIES</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service5.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">EXHAUST SYSTEM SERVICES</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-content">
+                                    <figure>
+                                        <img src="images/Service6.png" alt="service" />
+                                    </figure>
+                                    <div class="service-heading">OIL CHANGE</div>
+                                    <div class="heading-details">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="product-button" onclick="serviceButtonSlider(1)"><i
+                                class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- vehicle service -->
+        <section class="vehicle-service">
+            <div class="container">
+                <div class="vehicle-service-details">
+                    <h1>Vehicle Type<span class="highlight"><span>Services</span></span></h1>
+                    <div class="vehicle-service-details-subheading">We offer multiple services</div>
+                    <p>Etiam ullamcorper est terminal metro. Suspendisse a novum etos pellentesque a non felis maecenas
+                        module vimeo at malesuada. Primus elit lectus at felis, malesuada ultricies obec curabitur et
+                        ligula sande porta node vestibulum une commodo a convallis laoreet enim. Morbi at sinum interdum
+                        etos fermentum. Nulla elite terminal integer. Novum etos module un metro laoreet enim, morbi at
+                        sinum interdum etos fermentum in dolor supremum.
+                    </p>
+                </div>
+
+                <div class="wheeler-btn">
+                    <a class="Wheeler" href="#">2 Wheeler</a>
+                    <a class="Wheeler" href="#">4 Wheeler</a>
+                </div>
+
+                <div class="row vehicle-service-row">
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer1.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">EASY TO REACH</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer2.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">BEST RESULTS</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer3.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">ECO FRIENDLY</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer4.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">OIL CHANGE</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer5.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">INTERIOR CLEAN</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer6.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">EXTERIOR CLEAN</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer7.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">ENGINE CLEAN</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25">
+                        <div class="vehicle-service-offer">
+                            <div class="service-offer-log">
+                                <figure><img src="images/serviceoffer8.png" alt="service" /></figure>
+                            </div>
+                            <div class="service-offer-heading">ONLINE PAYMENTS</div>
+                            <div class="service-offer-details">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service package -->
+        <section class="service-package">
+            <div class="container">
+                <div class="service-package-details">
+                    <h1>Our <span class="highlight"><span> Service Package</span></span></h1>
+                </div>
+                <div class="row">
+
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">BASIC PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    1500.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">2 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Prewash</p>
+                                <p>AC Checkup</p>
+                                <p>Manual Cleaning</p>
+                                <p>Interiors Vacuum</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">DELUXE PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    1800.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">5 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Include the Basic Package</p>
+                                <p>Wheel Shine</p>
+                                <p>Tire Dressing</p>
+                                <p>Windows In & Out</p>
+                                <p>Brakes</p>
+                                <p>Steering</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                    <div class="col33">
+                        <div class="package-details">
+                            <span class="basic">PLATINUM PACKAGE</span>
+                            <div class="monthly">
+                                <span class="pay"><i class="bi bi-currency-rupee"></i>
+                                    2400.00/
+                                    <span class="month">Month</span> </span>
+                            </div>
+
+                            <div class="gray-line"></div>
+                            <span class="time">8 Hours</span>
+                            <div class="gray-line"></div>
+
+                            <div class="package-details-content">
+                                <p>Include the Basic Package</p>
+                                <p>Include the Deluxe Package</p>
+                                <p>Glass Polishing</p>
+                                <p>AC Vent Cleaning</p>
+                                <p>Car Exteriors</p>
+                                <p>Wheel Alignment</p>
+                                <p>Car Mats</p>
+                                <p>Dashboard Cleaning</p>
+                            </div>
+
+                            <a href="#" class="cmn-btn">Book Now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- we repair section -->
+        <section class="we-repair">
+            <div class="we-repair-container">
+                <div class="we-repair-details">
+                    <h1>We Repair All Makes of
+                        <span class="highlight"><span>Automobiles</span></span>
+                    </h1>
+                </div>
+                <div class="we-repair-subheading">We work with all makes and models of vehicles</div>
+
+                <div class="logos">
+                    <div class="swiper logoSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos-content">
+                                    <figure>
+                                        <img src="images/citroen.png" alt="logo" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Daewoo.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Audi.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/bmw.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chevrolet.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chrysler.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logos-content">
+                                    <figure>
+                                        <img src="images/citroen.png" alt="logo" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Daewoo.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/Audi.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/bmw.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chevrolet.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="logos-content">
+                                        <figure>
+                                            <img src="images/chrysler.png" alt="logo" />
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-details">
+                    <span class="contact">CONTACT US</span>
+                    <span class="footer-subheading">Do you have a question?</span>
+                    <span class="footer-subheading">Fell free to contact</span>
+                </div>
+
+                <div class="brand-information">
+                    <div class="row">
+                        <div class="col25">
+                            <div class="brand-details">
+                                <div class="icons">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Address:</span>
+                                    <span class="brand-subheading">123, AGC by Lane Modhupur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details email">
+                                <div class="icons">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Email Address:</span>
+                                    <span class="brand-subheading">autoservice@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details brand-contact">
+                                <div class="icons">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Contact No:</span>
+                                    <span class="brand-subheading">+91-1234567890</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="brand-details">
+                                <div class="icons">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="brand-text">
+                                    <span class="brand-heading">Follow Us</span>
+                                    <span class="Follow-icons">
+                                        <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i> <i
+                                            class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- footer services -->
+                        <div class="col25">
+                            <div class="links">
+                                <span>Our Services</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">Repair</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Diagnostic</a></li>
+                                        <li><a href="#">Oil Change</a></li>
+                                        <li><a href="#">Brake Repair Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Company</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">About Company</a></li>
+                                        <li><a href="#">Spares</a></li>
+                                        <li><a href="#">Diagnostic</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Quick Links</span>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Customer Feedback</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col25">
+                            <div class="links">
+                                <span>Get Our Newsletter</span>
+                                <p>If you want to receive our all weekly updates about new offers and discount, signup
+                                    below.</p>
+                                <a class="footer-btn" href="#">Enter your email address
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- copy right -->
+        <div class="copy-right">
+            <span>Copyright © 2023 Auto Service. All rights reserved</span>
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // our service swiper
+        function serviceButtonSlider(direction) {
+            const productSlider = document.getElementById('serviceSlider');
+            const scrollAmount = 1250;
+            productSlider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+
+        //logos ja
+        var swiper = new Swiper(".logoSwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 6,
+            spaceBetween: 43,
+        });
+    </script>
+</body>
+
+</html>
